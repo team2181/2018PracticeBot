@@ -39,7 +39,7 @@ public class DriveTrainDefault extends TimedCommand {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-
+    	Robot.driveTrain.driveMethod(Robot.oi.getXboxController());
     }
 
     // Called repeatedly when this Command is scheduled to run

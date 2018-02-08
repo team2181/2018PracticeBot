@@ -15,9 +15,9 @@ import org.usfirst.frc2181.PracticeBot2018.RobotMap;
 import org.usfirst.frc2181.PracticeBot2018.commands.*;
 
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.command.Subsystem;
-
+import edu.wpi.first.wpilibj.RobotDrive;
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 /**
  *
@@ -57,8 +57,7 @@ public class DriveTrain extends Subsystem {
     	double lefty = joystick.getRawAxis(1);
     	double rightx = .7 * joystick.getRawAxis(4);
     	
-    	RobotDrive.mechanumDrive_Cartesian(leftx, lefty, rightx, 0.0)
-    	
+    	robotDrive.mecanumDrive_Cartesian(leftx, lefty, rightx, 0.0);
     	
     }
   }
