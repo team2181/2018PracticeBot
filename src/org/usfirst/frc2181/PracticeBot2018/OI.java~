@@ -75,11 +75,11 @@ public class OI {
         gearLoaderFlipperUpStop.whenReleased(new gearLoaderDefault());
         gearLoaderFlipperUp = new JoystickButton(xboxController, 6);
         gearLoaderFlipperUp.whenPressed(new gearLandingForward());
-        ropeSpoolBackwardStop = new JoystickButton(xboxController, 2);
+        ropeSpoolBackwardStop = new JoystickButton(xboxController, 4);
         ropeSpoolBackwardStop.whenReleased(new ropeSpoolStopCommand());
         ropeSpoolForwardStop = new JoystickButton(xboxController, 1);
         ropeSpoolForwardStop.whenReleased(new ropeSpoolStopCommand());
-        ropeSpoolBackward = new JoystickButton(xboxController, 2);
+        ropeSpoolBackward = new JoystickButton(xboxController, 4);
         ropeSpoolBackward.whenPressed(new ropeSpoolBackwardC());
         ropeSpoolForward = new JoystickButton(xboxController, 1);
         ropeSpoolForward.whenPressed(new ropeSpoolForwardC());
