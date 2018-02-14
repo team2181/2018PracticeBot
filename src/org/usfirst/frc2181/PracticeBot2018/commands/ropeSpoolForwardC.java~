@@ -43,7 +43,7 @@ public class ropeSpoolForwardC extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-    	Robot.ropeSpool.setSpinner(.2);
+    	Robot.ropeSpool.setSpinner(.75);
     }
 
     // Make this return true when this Command no longer needs to run execute()
